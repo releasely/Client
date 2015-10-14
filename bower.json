@@ -1,0 +1,14 @@
+{
+  "name": "releasely",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jmdarling/Client",
+  "authors": [
+    "Jonathan Darling",
+    "Ashton Kinslow"
+  ],
+  "description": "The client for the releasely application.",
+  "private": true,
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
