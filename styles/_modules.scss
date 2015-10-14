@@ -1,15 +1,17 @@
+$navbar-height: 50px;
+
 .navbar {
-    height: 50px;
+    height: $navbar-height;
     width: 100%;
 
-    background-color: #FF3E49;
+    background-color: $brand-color;
     border-bottom: 3px solid #333333;
 }
 
 .navbar__title {
     display: inline;
-    height: 50px;
-    line-height: 50px;
+    height: $navbar-height;
+    line-height: $navbar-height;
     margin-left: 15px;
     
     color: #ffffff;
@@ -29,7 +31,7 @@
     border-right: none;
     border-bottom: none;
     border-left: 1px solid #777777;
-    color: #ffffff;
+    color: $font-color-inverse;
     font-size: .8rem;
 
     -webkit-transition: background-color .2s;
@@ -40,6 +42,6 @@
 }
 
 .navbar__login-button:hover {
-    background-color: #ed414c;
+    background-color: darken($brand-color, 10%);
     cursor: pointer;
 }

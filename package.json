@@ -1,0 +1,11 @@
+{
+  "name": "releasely",
+  "version": "0.0.1",
+  "description": "The client for the releasely application.",
+  "author": "Jonathan Darling, Ashton Kinslow",
+  "private": true,
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
+  }
+}
