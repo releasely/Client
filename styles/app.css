@@ -1,0 +1,45 @@
+html {
+  color: #333333;
+  font-family: 'Open Sans', sans-serif; }
+
+body {
+  margin: 0;
+  pading: 0; }
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  background-color: #FF3E49;
+  border-bottom: 3px solid #333333; }
+
+.navbar__title {
+  display: inline;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 15px;
+  color: #ffffff;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.6rem; }
+
+.navbar__login-button {
+  display: inline-block;
+  float: right;
+  height: inherit;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 1px solid #777777;
+  color: #ffffff;
+  font-size: .8rem;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -ms-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s; }
+
+.navbar__login-button:hover {
+  background-color: #ff0b19;
+  cursor: pointer; }
