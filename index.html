@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Fjalla+One" rel="stylesheet" type="text/css"/>
     <link href="bower_components/normalize-css/normalize.css" rel="stylesheet" type="text/css"/>
     <link href="styles/app.css" rel="stylesheet" type="text/css"/>
+
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link href="web_components/sexy-select.html" rel="import"/>
 </head>
 <body>
 <header class="navbar">
@@ -15,6 +18,7 @@
 </header>
 
 <form class="filter">
+    <sexy-select></sexy-select>
     <select class="filter__order-select">
         <option selected>Filter by...</option>
         <option>Release date ascending</option>
