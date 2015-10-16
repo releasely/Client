@@ -45,3 +45,14 @@ $navbar-height: 50px;
     background-color: darken($brand-color, 10%);
     cursor: pointer;
 }
+
+.filter {
+    margin: 20px 2% 0 2%;
+    padding: 10px;
+    width: 96%;
+
+    background-color: $gray-light;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
