@@ -1,8 +1,18 @@
 <link href="../bower_components/polymer/polymer.html" rel="import" />
 
 <dom-module id="sexy-select">
+    <style>
+        .select {
+            display: none;
+        }
+    </style>
+
     <template>
-        <select><option>swag</option></select>
+        <div class="wrapper">
+            <select class="select">
+                <option>swag</option>
+            </select>
+        </div>
     </template>
 
     <script>
