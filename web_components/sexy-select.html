@@ -2,7 +2,7 @@
 
 <dom-module id="sexy-select">
     <style>
-        .select {
+        #select {
             display: none;
         }
     </style>
@@ -11,22 +11,29 @@
         <div class="wrapper">
 
             <!-- Invisible Select element -->
-            <select class="select">
+            <select id="select">
                 <option>swag</option>
             </select>
 
-            <div class="input">
-
-            </div>
-            <div class="dropdown">
-                
-            </div>
+            <input type="text" class="select-input" />
+            <ul id="dropdown-list">
+                <template is="dom-repeat" items="{{selectOptions}}" as="selectOption">
+                    <li>{{selectOption}}</li>
+                </template>
+            </ul>
         </div>
     </template>
 
     <script>
         Polymer({
-            id: 'sexy-select'
+            id: 'sexy-select',
+            ready: function() {
+
+                this.selectOptions = [
+                    "foo",
+                    "bar"
+                ]
+            }
         });
     </script>
 </dom-module>
