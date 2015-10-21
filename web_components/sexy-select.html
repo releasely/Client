@@ -5,6 +5,10 @@
         #select {
             display: none;
         }
+
+        .hidden {
+            display: none;
+        }
     </style>
 
     <template>
@@ -15,8 +19,8 @@
                 <option>swag</option>
             </select>
 
-            <input type="text" class="select-input" />
-            <ul id="dropdown-list">
+            <input type="text" id="select-input" />
+            <ul class="hidden" id="dropdown-list">
                 <template is="dom-repeat" items="{{selectOptions}}" as="selectOption">
                     <li>{{selectOption}}</li>
                 </template>
@@ -35,5 +39,12 @@
                 ]
             }
         });
+
+        (function() {
+            var selectInput = document.getElementById('select-input');
+            selectInput.addEventListener('click', function(event) {
+                document.getElementById('dropdown-list').className = '';
+            });
+        })();
     </script>
 </dom-module>
