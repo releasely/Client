@@ -36,15 +36,17 @@
                 this.selectOptions = [
                     "foo",
                     "bar"
-                ]
+                ];
+
+                ready();
             }
         });
 
-        (function() {
+        function ready() {
             var selectInput = document.getElementById('select-input');
             selectInput.addEventListener('click', function(event) {
                 document.getElementById('dropdown-list').className = '';
             });
-        })();
+        }
     </script>
 </dom-module>
